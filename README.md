@@ -37,5 +37,5 @@ The files that were used in the project are the following, you can download them
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found at the [post](https://) 
+The main findings of the code can be found at the [post](https://paularivera288.wixsite.com/website/post/exploring-the-seattle-airbnb-data) 
 
