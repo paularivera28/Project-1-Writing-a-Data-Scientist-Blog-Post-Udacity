@@ -5,40 +5,34 @@
 
 1. [Project Motivation](#motivation)
 2. [File Description](#Description)
-3. [Instructions](#Instructions)
-4. [Results](#Results)
+3. [Results](#Results)
 
 
 ## Project Motivation <a name="motivation"></a>
-This project is part of the Data Scientist Nanodegree Program of udacity, who has the aim to implement a pipeline to transform and clean the data and create a classification model to analyse several messages and can know the generall idea of the message and give an adecuate response.
+
+In this project I was interested in exploring the Airbnb this information was obtained from the Seattle Airbnb Open Data Kaggle site and that is available for everyone who wants to consult it, . In this dataset we can found information about the availability, prices, charactheristics of the listed places. I wanted to find out what characteristics could make the price of a place publiWhat type of rooms has the highest proportion of reservations in the next 60 days?
+shed out there greater or lesser, to try to find out this, I asked myself the following questions:
+
+*  What time of year has the highest and lowest prices?
+*  What type of rooms has the highest proportion of reservations in the next 60 days?
+*  The number of bedrooms influences the price?
+*  The number of bathrooms influences the price?
+*  How is the relationship between property type price of them?
+
 
 
 ## Files Description <a name="Description"></a>
 
-The repositori has the following 3 folders
+The files that were used in the project are the following, you can download them here https://www.kaggle.com/airbnb/seattle
 
-- data: in this folder you can found the supplies for the project, that is the messages and the categories, also there you can foun the notebook used to transform and clean the data an the process_data.py who was the inprove code from the notebook and finaly DisasterResponse a dbo file with the transformed data.
-
-- model: in this folder cotains the procedure to creat a pipeline for train, build and evaluate a clasiffication model, the model I select is a BaggingClassifier to categorize message this is on the filed train_classifier.py.
-
-- app: in this folder cotains a the scrip run.py with the html templates given in the classroom necesary to run the API.
-
-
-## Instructions <a name="Instructions"></a>
-
-Follow the steps below to run the app
-
-1. To run ETL pipeline that cleans data and stores in database
-        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
-2. To run ML pipeline that trains classifier and saves
-        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
-
-2. To change the location to the directory app write `cd app` and then `python run.py` to run the web app
-
-3. Visit this link to see the Dashboard  http://0.0.0.0:3001/
+- **calendar.csv**: Provides date, availability, and price data for each listing
+- **listings.csv**: Provides comprehensive details about each listing including host details, location description and details, and review ratings
+- **reviews.csv**: Provides details of review comments
 
 
 ## Results<a name="results"></a>
 
 The blog with the result of the analisis is in this link  [post](https://paularivera288.wixsite.com/website/post/exploring-the-seattle-airbnb-data)
+
+
 
