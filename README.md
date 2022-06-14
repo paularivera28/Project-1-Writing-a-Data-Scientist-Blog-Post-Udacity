@@ -2,40 +2,56 @@
  
 ### Table of Contents
 
-1. [Installation](#installation)
+1. [Libraries](#Libraries)
 2. [Project Motivation](#motivation)
-3. [File Description](#files)
-4. [Results](#results)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
+3. [File Description](#Description)
+4. [Instructions](#Instructions)
+5. [Results](#Results)
 
 ## Installation <a name="installation"></a>
 
-For this project I use Python3 and these libralies
-* pandas
-* numpy
+In this project I use the following libraries in python:
+
+* Pandas
+* Numpy
+* math
+* json
 * matplotlib
-* seaborn
+* sklearn
 
 ## Project Motivation <a name="motivation"></a>
 
-In this project I was interested in exploring the Airbnb this information was obtained from the Seattle Airbnb Open Data Kaggle site and that is available for everyone who wants to consult it, . In this dataset we can found information about the availability, prices, charactheristics of the listed places. I wanted to find out what characteristics could make the price of a place publiWhat type of rooms has the highest proportion of reservations in the next 60 days?
-shed out there greater or lesser, to try to find out this, I asked myself the following questions:
-
-*  What time of year has the highest and lowest prices?
-*  What type of rooms has the highest proportion of reservations in the next 60 days?
-*  The number of bedrooms influences the price?
-*  The number of bathrooms influences the price?
-*  How is the relationship between property type price of them?
+This project is part of the Data Scientist Nanodegree Program of udacity, who has the aim to put in action all the sill we learn in the program, the idea is to understand the behavior of the clients based on thei characteristics and the interactions with the type of offert they recived in the final transaction or purshase by different media like web, social or mobile with the objective of determine the features that make and ofert succesful.
 
 ## File Descriptions <a name="files"></a>
 
-The files that were used in the project are the following, you can download them here https://www.kaggle.com/airbnb/seattle
+The repositori has the following 3 folders
 
-- **calendar.csv**: Provides date, availability, and price data for each listing
-- **listings.csv**: Provides comprehensive details about each listing including host details, location description and details, and review ratings
-- **reviews.csv**: Provides details of review comments
+- **portfolio.json**
+
+- id (string) - offer id
+- offer_type (string) - type of offer ie BOGO, discount, informational
+- difficulty (int) - minimum required spend to complete an offer
+- reward (int) - reward given for completing an offer
+- duration (int) - time for offer to be open, in days
+- channels (list of strings)
+
+- **profile.json**
+
+- age (int) - age of the customer
+- became_member_on (int) - date when customer created an app account
+- gender (str) - gender of the customer (note some entries contain 'O' for other rather than M or F)
+- id (str) - customer id
+- income (float) - customer's income
+
+- **transcript.json**
+
+- event (str) - record description (ie transaction, offer received, offer viewed, etc.)
+- person (str) - customer id
+- time (int) - time in hours since start of test. The data begins at time t=0
+- value - (dict of strings) - either an offer id or transaction amount depending on the record
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found at the [post](https://paularivera288.wixsite.com/website/post/exploring-the-seattle-airbnb-data) 
+The blog with the result of the analisis is in this link  [post](https://paularivera288.wixsite.com/website/post/exploring-the-seattle-airbnb-data)
 
